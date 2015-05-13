@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp極客學園
+namespace CSharp極客學園_數值型別
 {
     class Program
     {
