@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學園.型別�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學園.條件語句", "CSharp極客學園.條件語句\CSharp極客學園.條件語句.csproj", "{46BDBA63-E51E-4B24-A3EE-50DD5044396B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客園.集合類型", "CSharp極客園.集合類型\CSharp極客園.集合類型.csproj", "{8D934A48-2EFA-454C-8079-A340C1F40ED4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學園.集合類型", "CSharp極客園.集合類型\CSharp極客學園.集合類型.csproj", "{8D934A48-2EFA-454C-8079-A340C1F40ED4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
