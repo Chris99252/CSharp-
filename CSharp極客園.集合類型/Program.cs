@@ -106,6 +106,49 @@ namespace CSharp極客學園.集合類型
             }
 
             #endregion
+
+            #region Hashtable,Dictionary,SortList
+
+            Hashtable ht = new Hashtable(); // 每個 值 都有一個對應的 key
+
+            ht.Add("first", "極客");
+            ht.Add("second", "學園");
+            ht.Add(100, 1001);
+            Console.WriteLine(ht["second"]); //輸出：學園
+            Console.WriteLine(ht[100]);
+            Console.WriteLine(ht[99]); // 無效的 key 值，回傳空值
+
+            // Hashtable 可以存任何型別，Dictionary 要宣告型別
+
+            Dictionary<string, string> d = new Dictionary<string, string>();
+
+            d.Add("first", "極客");
+
+            // d.Add(100, 1001); 
+
+            //Console.WriteLine(d["99"]); // 例外錯誤：KeyNotFoundException
+
+            // ConcurrentDictionary 多線程
+
+            // SortedList 經過排序的 List，根據 Key 值排序
+
+            SortedList<int, int> sl = new SortedList<int, int>();
+
+            sl.Add(5, 105);
+            sl.Add(2, 102);
+            sl.Add(10, 99);
+
+            foreach (var item in sl)
+            {
+                Console.WriteLine(item);
+                Console.WriteLine(item.Value);
+            }
+
+            // stack 堆疊 先進後出
+
+            // heap 序列 先進先出
+
+            #endregion
         }
     }
 }
