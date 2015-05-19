@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學園.物件�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotherAssembly", "AnotherAssembly\AnotherAssembly.csproj", "{85A47F33-F78D-4E81-BF7B-02A2724DEA51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學園.物件導向.繼承", "CSharp極客學園.繼承\CSharp極客學園.物件導向.繼承.csproj", "{23865BF3-65C2-4D18-BFC8-3E838B3C70F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{85A47F33-F78D-4E81-BF7B-02A2724DEA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85A47F33-F78D-4E81-BF7B-02A2724DEA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85A47F33-F78D-4E81-BF7B-02A2724DEA51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23865BF3-65C2-4D18-BFC8-3E838B3C70F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23865BF3-65C2-4D18-BFC8-3E838B3C70F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23865BF3-65C2-4D18-BFC8-3E838B3C70F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23865BF3-65C2-4D18-BFC8-3E838B3C70F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

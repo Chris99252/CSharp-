@@ -24,6 +24,7 @@ namespace CSharp極客學園.物件導向.封裝
             // public, private, internal, protected, internal protected
 
             Person p = new Person();
+            p.Age = 18;
             Console.WriteLine(p.Age);
             Console.WriteLine(p.GetAge());
 
