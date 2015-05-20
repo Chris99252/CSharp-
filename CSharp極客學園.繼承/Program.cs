@@ -26,7 +26,7 @@ namespace CSharp極客學園.物件導向.繼承
 
             dog.GetAge(); // 父類別 Animal 的 GetAge()
 
-            dog.BiteMan(); // 父類別 Animal 的 BiteMan()
+            dog.BiteMan(); // 子類別 Dog 的 BiteMan()
 
             Dog oldDog = new Dog(10);
 
@@ -83,6 +83,12 @@ namespace CSharp極客學園.物件導向.繼承
             //}
 
             //public Dog(int age) : base(age)// 建構函式2，加上 base(age)：執行父類別的建構函式2，再建構子類別的建構函式2
+            //{
+            //    Console.WriteLine("Old Dog constructor");
+            //    this.Age = age;
+            //}
+
+            //public Dog(int age): base() // 建構函式2，加上 base()，先執行默認的父類別的建構函式1，再建構子類別的建構函式2
             //{
             //    Console.WriteLine("Old Dog constructor");
             //    this.Age = age;
