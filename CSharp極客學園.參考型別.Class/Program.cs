@@ -25,6 +25,8 @@ namespace CSharp極客學園.參考型別.Class.Interface.AbstractClass
 
             // person.GetFive(); // 靜態方法與靜態成員，都只存在於自己的類別內，不能實例化變數，所以 person.GetFive() 不存在
 
+            // Console.WriteLine(person.Number); // 靜態成員
+          
             Console.WriteLine(Person.GetFive()); // 輸出 5
 
             Console.WriteLine(person.Age); // 輸出 0，有 get，可以取得值，int 默認值為零
@@ -55,6 +57,8 @@ namespace CSharp極客學園.參考型別.Class.Interface.AbstractClass
         // 屬性 Property
 
         public int Age { get; set; } //  age 為 private 資料成員，Property 提供一個可以讓外部使用的方式
+
+        public static int Number { get; set; }
 
         public int Age2
         { 
