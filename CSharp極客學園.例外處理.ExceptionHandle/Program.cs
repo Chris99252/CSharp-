@@ -21,10 +21,18 @@ namespace CSharp極客學園.異常處理.ExceptionHandle
             {
                 int y = 100 / x; // 異常訊息：嘗試以零除。
             }
-            catch (Exception e) // System.Exception
+            catch (NullReferenceException e) // System.Exception
+            {
+                Console.WriteLine(e.Message);
+            } 
+            catch (DivideByZeroException e)
             {
                 Console.WriteLine(e.Message); // 正常執行，輸出：嘗試以零除
-            } 
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
             finally // 不管 catch 異常與否，最後都要執行 finally
             {
                 Console.WriteLine("Anyway, we arrive here!");
@@ -41,6 +49,20 @@ namespace CSharp極客學園.異常處理.ExceptionHandle
             var fne = new FileNotFoundException(); // 文件沒有找到異常
             var ioe = new InvalidOperationException(); // 運算異常
             var nie = new NotImplementedException(); // 未實現異常
+
+            if (true)
+            {
+                // logic
+            }
+
+            try
+            {
+
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
     }
 }
