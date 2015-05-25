@@ -124,4 +124,32 @@ namespace CSharp極客學園.索引子
             }
         }
     }
+
+    // interface 
+
+    public interface ISomeInterface
+    {
+        int this[int index] { get; set; }
+    }
+
+    // 不夠強壯的代碼，沒有做任何合法判斷
+
+    // 注意參數的合法範圍，空值異常判斷，存取修飾詞，盡可能用作小限度。
+
+    class IndexerClass : ISomeInterface
+    {
+        private int[] arr = new int[100];
+
+        public int this[int index]
+        {
+            get
+            {
+                return arr[index];
+            }
+            set
+            {
+                arr[index] = value;
+            }
+        }
+    }
 }
