@@ -10,6 +10,7 @@ namespace CSharp極客學園.索引子
     {
         /// <summary>
         /// 索引子 indexer
+        /// indexer的多型
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
@@ -31,6 +32,11 @@ namespace CSharp極客學園.索引子
             {
                 Console.WriteLine(name[i]);
             }
+
+            Console.WriteLine(name["C#"]); // 輸出：5
+            Console.WriteLine(name["syntax"]); // 輸出：9
+            Console.WriteLine(name["New"]); // 輸出：-1
+
         }
     }
     class IndexedNames
@@ -75,6 +81,30 @@ namespace CSharp極客學園.索引子
                 {
                     nameList[index] = value;
                 }
+            }
+        }
+
+        // 索引器 overload 多型
+
+        public int this[string name]
+        {
+            get
+            {
+                int index = 0;
+
+                while (index < nameList.Length)
+                {
+                    if (nameList[index] == name)
+                    {
+                        return index;
+                    }
+                    else
+                    {
+                        index++;
+                    }
+                }
+
+                return -1;
             }
         }
 
