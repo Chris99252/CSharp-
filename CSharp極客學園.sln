@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學園.IO.建�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學園.IO.獲取文件", "CSharp極客學園.IO.獲取文件\CSharp極客學園.IO.獲取文件.csproj", "{C36FDA70-5332-41D4-9769-B47EC086B585}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學園.索引子", "CSharp極客學園.索引子\CSharp極客學園.索引子.csproj", "{738724FB-63E7-41C6-B20D-F898454A3895}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{C36FDA70-5332-41D4-9769-B47EC086B585}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C36FDA70-5332-41D4-9769-B47EC086B585}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C36FDA70-5332-41D4-9769-B47EC086B585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{738724FB-63E7-41C6-B20D-F898454A3895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{738724FB-63E7-41C6-B20D-F898454A3895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{738724FB-63E7-41C6-B20D-F898454A3895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{738724FB-63E7-41C6-B20D-F898454A3895}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
