@@ -13,6 +13,7 @@ namespace CSharp極客學園.委派
     {
         /// <summary>
         /// 委派 Delegate
+        /// 委派 - 多型
         /// </summary>
         /// <param name="args"></param>
 

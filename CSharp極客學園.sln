@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學園.索引�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學園.委派", "CSharp極客學園.委派\CSharp極客學園.委派.csproj", "{75F6D1A1-40E2-4E47-8EBE-C1C303D6A605}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學園.多重委派", "CSharp極客學園.多重委派\CSharp極客學園.多重委派.csproj", "{997403A0-F7DB-4D0E-B3F2-82FC7F3B576B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{75F6D1A1-40E2-4E47-8EBE-C1C303D6A605}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75F6D1A1-40E2-4E47-8EBE-C1C303D6A605}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75F6D1A1-40E2-4E47-8EBE-C1C303D6A605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{997403A0-F7DB-4D0E-B3F2-82FC7F3B576B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{997403A0-F7DB-4D0E-B3F2-82FC7F3B576B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{997403A0-F7DB-4D0E-B3F2-82FC7F3B576B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{997403A0-F7DB-4D0E-B3F2-82FC7F3B576B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
