@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學園.委派",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學園.多重委派", "CSharp極客學園.多重委派\CSharp極客學園.多重委派.csproj", "{997403A0-F7DB-4D0E-B3F2-82FC7F3B576B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學園.事件event", "CSharp極客學園.事件event\CSharp極客學園.事件event.csproj", "{7597D28D-C5AD-42A4-B8BC-847F7E73E9F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{997403A0-F7DB-4D0E-B3F2-82FC7F3B576B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{997403A0-F7DB-4D0E-B3F2-82FC7F3B576B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{997403A0-F7DB-4D0E-B3F2-82FC7F3B576B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7597D28D-C5AD-42A4-B8BC-847F7E73E9F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7597D28D-C5AD-42A4-B8BC-847F7E73E9F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7597D28D-C5AD-42A4-B8BC-847F7E73E9F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7597D28D-C5AD-42A4-B8BC-847F7E73E9F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
