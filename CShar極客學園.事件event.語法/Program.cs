@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace CShar極客學園.事件event.語法
 {
+    // 官方建議寫法：EventHandler
+
+    public delegate void ChangedEventHandler(object sender, EventArgs e);
+
     class Program
     {
         static void Main(string[] args)
@@ -14,6 +18,16 @@ namespace CShar極客學園.事件event.語法
             e.SetNum(100);
             e.ChangeNum += new EventTest.NumManipulationHandler(EventTest.EventFired);
             e.SetNum(200);
+
+            IMyInterface i = new MyClass();
+
+            i.MyEvent += new MyDelegate(f);
+            i.FireAway();
+        }
+
+        private static void f()
+        {
+            Console.WriteLine("This is called when the event fired");
         }
     }
 
@@ -54,6 +68,33 @@ namespace CShar極客學園.事件event.語法
             {
                 value = n;
                 OnNumChanged();
+            }
+        }
+
+        
+    }
+
+    // event 是可以被繼承的，但事件的方法要宣告為 public protected
+ 
+    public delegate void MyDelegate();
+
+    public interface IMyInterface
+    {
+        event MyDelegate MyEvent;
+        event EventHandler MyGuidLineEvent;
+
+        void FireAway();
+    }
+
+    public class MyClass : IMyInterface
+    {
+        public event MyDelegate MyEvent;
+        public event EventHandler MyGuidLineEvent;
+        public void FireAway()
+        {
+            if (MyEvent != null)
+            {
+                MyEvent();
             }
         }
     }

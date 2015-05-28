@@ -9,6 +9,7 @@ namespace CSharp極客學園.委派
     // 委派宣告端
 
     delegate int NumberChange(int n);
+
     class Program
     {
         /// <summary>
