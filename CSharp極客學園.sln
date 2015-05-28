@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學園.多重�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學園.事件event", "CSharp極客學園.事件event\CSharp極客學園.事件event.csproj", "{7597D28D-C5AD-42A4-B8BC-847F7E73E9F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CShar極客學園.事件event.語法", "CShar極客學園.事件event.語法\CShar極客學園.事件event.語法.csproj", "{70FF81CC-E84F-4748-9043-84E00FD6BA3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{7597D28D-C5AD-42A4-B8BC-847F7E73E9F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7597D28D-C5AD-42A4-B8BC-847F7E73E9F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7597D28D-C5AD-42A4-B8BC-847F7E73E9F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70FF81CC-E84F-4748-9043-84E00FD6BA3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70FF81CC-E84F-4748-9043-84E00FD6BA3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70FF81CC-E84F-4748-9043-84E00FD6BA3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70FF81CC-E84F-4748-9043-84E00FD6BA3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
