@@ -12,6 +12,18 @@ namespace CSharp極客學園.Attribute
     {
         static void Main(string[] args)
         {
+            HelpAttribute helpAttribute;
+
+            foreach (var item in typeof(AnyClass).GetCustomAttributes(true))
+            {
+                helpAttribute = item as HelpAttribute;
+
+                if (helpAttribute != null)
+                {
+                    Console.WriteLine("AnyClass description:{0}", helpAttribute.description);
+                }
+            }
+
             MyClass.Message("In Main Function");
             Function1();
         }
@@ -42,7 +54,7 @@ namespace CSharp極客學園.Attribute
     [AttributeUsage(AttributeTargets.Class,AllowMultiple=false, Inherited=false)]
     public class HelpAttribute : Attribute
     {
-        protected string description { get; private set; }
+        public string description { get; private set; }
         public string Name { get; set; }
         public HelpAttribute(string descripton_in)
         {
