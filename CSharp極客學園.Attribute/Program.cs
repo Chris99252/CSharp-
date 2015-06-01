@@ -1,5 +1,4 @@
 ﻿#define DEBUG
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -8,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace CSharp極客學園.Attribute
 {
+    using System;
     class Program
     {
         static void Main(string[] args)
@@ -37,5 +37,23 @@ namespace CSharp極客學園.Attribute
         {
             Console.WriteLine(msg);
         }
+    }
+
+    [AttributeUsage(AttributeTargets.Class,AllowMultiple=false, Inherited=false)]
+    public class HelpAttribute : Attribute
+    {
+        protected string description { get; private set; }
+        public string Name { get; set; }
+        public HelpAttribute(string descripton_in)
+        {
+            this.description = descripton_in;
+        }
+    }
+
+    // value, type, System.Type, object, enum
+    [HelpAttribute("This is a do-nothing class",Name="極客學院")]
+    public class AnyClass
+    {
+        
     }
 }
