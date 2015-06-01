@@ -29,6 +29,9 @@ namespace CSharp極客學園.泛型
 
             Console.WriteLine();
 
+            intArray.GenericMethod<string>("Hello Generic!");
+            intArray.GenericMethod<int>(100);
+
             // char
 
             MyGenericArray<char> charArray = new MyGenericArray<char>(5);
@@ -43,7 +46,32 @@ namespace CSharp極客學園.泛型
                 Console.Write(charArray.GetItem(i) + " ");
             }
             
-            Console.WriteLine();            
+            Console.WriteLine();
+
+            int a, b;
+            char c, d;
+
+            a = 10;
+            b = 20;
+            c = 'I';
+            d = 'V';
+
+            Console.WriteLine("a = {0}; b = {1}", a, b);
+            Console.WriteLine("c = {0}; d = {1}", c, d);
+
+            Swap<int>(ref a, ref b);
+            Swap<char>(ref c, ref d);
+
+            Console.WriteLine("a = {0}; b = {1}", a, b);
+            Console.WriteLine("c = {0}; d = {1}", c, d);
+
+        }
+        private static void Swap<T>(ref T lhs, ref T rhs)
+        {
+            T temp;
+            temp = lhs;
+            lhs = rhs;
+            rhs = temp;
         }
     }
 
@@ -69,15 +97,20 @@ namespace CSharp極客學園.泛型
         {
             array[index] = value;
         }
+
+        public void GenericMethod<X>(X x)
+        {
+            Console.WriteLine(x.ToString());
+        }
     }
 
-    public class SubClass : MyGenericArray<int>
-    {
+    //public class SubClass : MyGenericArray<int>
+    //{
 
-    }
+    //}
 
-    public class SubGenericClass<T> : MyGenericArray<T> where T : struct
-    {
+    //public class SubGenericClass<T> : MyGenericArray<T> where T : struct
+    //{
 
-    }
+    //}
 }
