@@ -9,10 +9,39 @@ namespace CSharp極客學園.泛型
     /// <summary>
     /// 泛型：宣告一個泛型，不同的型別，都可以叫用。提高類別的重用性。確保類型是一致的，安全的。提高性能。
     /// </summary>
+
+    delegate T NumberChange<T>(T n);
     class Program
     {
+        static int num = 10;
+        static string s1 = "Hello";
+
+        // delegate 泛型委派
+
+        public static int AddNum(int p)
+        {
+            num += p;
+            return num;
+        }
+
+        public static string MultString(string p)
+        {
+             s1 += p;
+            return s1;
+        }
+
         static void Main(string[] args)
         {
+            NumberChange<int> nc1 = new NumberChange<int>(AddNum);
+
+            NumberChange<string> nc2 = new NumberChange<string>(MultString);
+
+            nc1(25);
+            Console.WriteLine(num);
+
+            nc2(" World");
+            Console.WriteLine(s1);
+
             // int
 
             MyGenericArray<int> intArray = new MyGenericArray<int>(5);
