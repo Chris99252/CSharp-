@@ -47,8 +47,11 @@ namespace CSharp極客學園.泛型
         }
     }
 
-    //宣告一個泛型的 class<T>
-    public class MyGenericArray<T>
+    //宣告一個泛型的 class<T> 限制 T 必須為實值型別
+
+    // Dictionary
+
+    public class MyGenericArray<T> where T : struct
     {
         private T[] array;
 
@@ -66,5 +69,15 @@ namespace CSharp極客學園.泛型
         {
             array[index] = value;
         }
+    }
+
+    public class SubClass : MyGenericArray<int>
+    {
+
+    }
+
+    public class SubGenericClass<T> : MyGenericArray<T> where T : struct
+    {
+
     }
 }
