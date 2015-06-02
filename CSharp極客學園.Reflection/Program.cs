@@ -31,6 +31,37 @@ namespace CSharp極客學園.Reflection
 
             // GetFields(), GetProperites()
 
+            Assembly objAssembly;
+
+            objAssembly = Assembly.Load("mscorlib,2.0.0.0.Neutral,b77ac5c561934e089");
+
+            Type[] types = objAssembly.GetTypes();
+
+            //foreach (var item in types)
+            //{
+            //    Console.WriteLine(item.Name);
+            //}
+
+            objAssembly = Assembly.GetExecutingAssembly();
+
+            Type t4 = objAssembly.GetType("CSharp極客學園.Reflection.Car", false, true);
+
+            object obj = Activator.CreateInstance(t4);
+
+            MethodInfo mi = t4.GetMethod("IsMoving");
+
+            var isMoving = (bool)mi.Invoke(obj,null);
+
+            if (isMoving)
+            {
+                Console.WriteLine("Is moving");
+            }
+            else
+            {
+                Console.WriteLine("Not is moving");
+            }
+
+            // System.Emit
         }
         public static void GetMethods(Type t, BindingFlags f)
         {
@@ -41,5 +72,13 @@ namespace CSharp極客學園.Reflection
                 Console.WriteLine(item.Name);
             }
         } 
+    }
+
+    public class Car
+    {
+        public bool IsMoving()
+        {
+            return true;
+        }
     }
 }
