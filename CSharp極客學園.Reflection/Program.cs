@@ -11,13 +11,13 @@ namespace CSharp極客學園.Reflection
     {
         static void Main(string[] args)
         {
-            // System.Type
+            // System.Type GetType
 
             string s = "Hello Reflection";
             Type t1 = s.GetType();
             Console.WriteLine(t1.FullName); // 輸出：System.String
             
-            Type t2 = Type.GetType("System.String", false,true); // 變數 ｜ 是否報錯｜ 忽略大小寫
+            Type t2 = Type.GetType("System.String", false,true); // 變數 ｜ 是否報錯 ｜ 忽略大小寫
             Console.WriteLine(t2.FullName); // 輸出：System.String
             
             Type t3 = typeof(string);
