@@ -30,7 +30,7 @@ namespace CShar極客學園.Regualr
             Console.WriteLine(r2.IsMatch("abcd123")); //  abcd[1][2][3]
 
             var r3 = new Regex(@"."); // 任何的字符
-            Console.WriteLine(r2.IsMatch("abcd123.")); //  [a][b][c][d][1][2][3][.]
+            Console.WriteLine(r3.IsMatch("abcd123.")); //  [a][b][c][d][1][2][3][.]
 
             var r4 = new Regex(@"\."); // 只有 .
             Console.WriteLine(r4.IsMatch("abcd123.")); //  abcd123[.]
@@ -57,29 +57,44 @@ namespace CShar極客學園.Regualr
             Console.WriteLine(r12.IsMatch("hello jikexueyuan ")); // [h][e][l][l][o] [j][i][k][e][x][u][e][y][u][a][n] 
 
             var r13 = new Regex(@"^hello.*"); // hello 開頭，後面全部
-            Console.WriteLine(r12.IsMatch("hello jikexueyuan ")); // [hello jikexueyuan ]
+            Console.WriteLine(r13.IsMatch("hello jikexueyuan ")); // [hello jikexueyuan ]
 
             var r14 = new Regex(@"^hello.*xueyuan$"); // hello 開頭，xueyuan 結束
             Console.WriteLine(r14.IsMatch("hello jikexueyuan")); // [hello jikexueyuan]
 
             var r15 = new Regex(@"(hello)"); // 有 hello 字串
-            Console.WriteLine(r14.IsMatch("hello jikexueyuan")); // [(<1>hello)] jikexueyuan
+            Console.WriteLine(r15.IsMatch("hello jikexueyuan")); // [(<1>hello)] jikexueyuan
 
             var r16 = new Regex(@"(hello).*(xueyuan)"); // 有 hello 與 xueyuan 字串
-            Console.WriteLine(r14.IsMatch("hello jikexueyuan")); // [(<1>hello) (<2>xueyuan)]
+            Console.WriteLine(r16.IsMatch("hello jikexueyuan")); // [(<1>hello) (<2>xueyuan)]
 
             var r17 = new Regex(@"(.*)"); // 全部字串
-            Console.WriteLine(r14.IsMatch("hello jikexueyuan")); // [(<1>hello jikexueyuan)][(<1>)]
+            Console.WriteLine(r17.IsMatch("hello jikexueyuan")); // [(<1>hello jikexueyuan)][(<1>)]
 
             var r18 = new Regex(@"(hello|xueyuan)"); // hello 或 xueyuan 字串
-            Console.WriteLine(r14.IsMatch("hello jikexueyuan")); // [(<1>hello)] jike[(<1>xueyuan)]
+            Console.WriteLine(r18.IsMatch("hello jikexueyuan")); // [(<1>hello)] jike[(<1>xueyuan)]
 
             var r19 = new Regex(@"\w"); // 所有的字符
-            Console.WriteLine(r14.IsMatch("hello jikexueyuan *&^%$#")); // [h][e][l][l][o] [j][i][k][e][x][u][e][y][u][a][n] *&^%$#
+            Console.WriteLine(r19.IsMatch("hello jikexueyuan *&^%$#")); // [h][e][l][l][o] [j][i][k][e][x][u][e][y][u][a][n] *&^%$#
 
             var r20 = new Regex(@"\W"); // 不是字符的
-            Console.WriteLine(r14.IsMatch("hello jikexueyuan *&^%$#")); // hello[ ]jikexueyuan[ ][*][&][^][%][$][#]
-        
+            Console.WriteLine(r20.IsMatch("hello jikexueyuan *&^%$#")); // hello[ ]jikexueyuan[ ][*][&][^][%][$][#]
+
+            string[] values = { "111-22-3333", "111-2-3333" };
+
+            var pattern2 = @"^\d{3}-\d{2}-\d{4}$";
+
+            foreach (var item in values)
+            {
+                if (Regex.IsMatch(item,pattern2))
+                {
+                    Console.WriteLine("{0} is valid", item);
+                }
+                else
+                {
+                    Console.WriteLine("{0} is not valid", item);
+                }
+            }
         }
     }
 }
