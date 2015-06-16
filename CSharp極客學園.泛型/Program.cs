@@ -93,7 +93,6 @@ namespace CSharp極客學園.泛型
 
             Console.WriteLine("a = {0}; b = {1}", a, b);
             Console.WriteLine("c = {0}; d = {1}", c, d);
-
         }
         private static void Swap<T>(ref T lhs, ref T rhs)
         {
