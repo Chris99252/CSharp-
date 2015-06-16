@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp極客學院.Preproce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CShar極客學園.Regualr", "Regex\CShar極客學園.Regualr.csproj", "{A6C372FB-0F86-473F-8DD9-461CD10D5394}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CShar極客學園.匿名函數", "CShar極客學園.匿名函數\CShar極客學園.匿名函數.csproj", "{7950EDF9-3909-42AD-ACF9-3D28A2364B3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{A6C372FB-0F86-473F-8DD9-461CD10D5394}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6C372FB-0F86-473F-8DD9-461CD10D5394}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6C372FB-0F86-473F-8DD9-461CD10D5394}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7950EDF9-3909-42AD-ACF9-3D28A2364B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7950EDF9-3909-42AD-ACF9-3D28A2364B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7950EDF9-3909-42AD-ACF9-3D28A2364B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7950EDF9-3909-42AD-ACF9-3D28A2364B3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
